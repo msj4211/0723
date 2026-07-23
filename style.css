@@ -97,3 +97,80 @@ body {
 .main-nav a:hover {
   transform: scale(1.15);
 }
+
+.ad-banner {
+  width: 100%;
+  padding: 2rem clamp(1.5rem, 8vw, 6rem) 0;
+}
+
+.ad-banner .splide {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.ad-banner .splide__slide {
+  aspect-ratio: 1036 / 1600;
+  height: auto;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.site-main {
+  padding: 2.5rem clamp(1.5rem, 8vw, 6rem) 4rem;
+}
+
+.section-title-box {
+  width: 100%;
+  background-color: #FFFDFA;
+  border: 1px solid #DDD6C8;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem 1.5rem;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #EFE8DB;
+  border-radius: 12px;
+}
+
+.menu-name {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.site-footer {
+  border-top: 1px solid #DDD6C8;
+  padding: 2rem clamp(1.5rem, 8vw, 6rem);
+  text-align: center;
+  color: #8A8378;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
